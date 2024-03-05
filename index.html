@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="mt-4">
+      <h1 class="text-3xl text-center font-medium text-orange-400">
+        Discount! Discount! Discount!
+      </h1>
+    </header>
+    <main>
+      <section class="bg-sky-400 w-9/12 mx-auto mt-8 rounded-xl">
+        <div class="p-8 text-white space-y-7 text-center">
+          <h4 class="text-5xl">Price: $<span id="price-total">00</span></h4>
+          <input
+            id="coupon-code"
+            class="rounded-lg px-2 py-2 text-black"
+            type="text"
+            placeholder="Coupon"
+          />
+          <button
+            id="btn-discount"
+            class="btn bg-purple-500 px-6 py-2 rounded-lg font-bold"
+          >
+            Apply 30%
+          </button>
+          <h5 class="text-4xl">Please Pay: $<span id="pay-total">00</span></h5>
+        </div>
+      </section>
+
+      <section class="bg-green-400 w-3/4 mx-auto mt-8 rounded-xl">
+        <div class="space-y-2 p-8">
+          <h2 class="text-3xl text-white font-medium">Product</h2>
+          <input
+            id="price-field"
+            type="text"
+            placeholder="$ Amount"
+            class="block w-9/12 px-4 py-2 rounded-lg"
+          />
+          <button
+            id="add-btn"
+            class="btn bg-purple-500 px-6 py-2 rounded-lg text-white font-bold"
+          >
+            Add
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/disocunt.js"></script>
+  </body>
+</html>
